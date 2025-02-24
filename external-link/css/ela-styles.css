@@ -1,0 +1,81 @@
+/* Stylish markers */
+.ela-marker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff6b6b, #ff3838);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
+.ela-marker:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* References section */
+#ela-references {
+    margin-top: 50px;
+    padding: 25px;
+    border-top: 2px solid #eee;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+#ela-references h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+#ela-references ol {
+    padding-left: 20px;
+}
+#ela-references li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+#ela-references li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+#ela-references li a {
+    text-decoration: none;
+    color: #0073aa;
+    font-weight: 500;
+}
+#ela-references li a:hover {
+    text-decoration: underline;
+}
+
+/* Highlight effect */
+.highlight {
+    animation: highlightFade 1.5s ease;
+    border: 2px solid #ff6b6b;
+    padding: 8px;
+    border-radius: 5px;
+}
+@keyframes highlightFade {
+    0% { background-color: #fff9e6; }
+    100% { background-color: white; }
+}
+
+/* Prevent default link behavior for external links */
+.ela-link {
+    cursor: pointer;
+    color: #0073aa;
+    text-decoration: underline;
+}
+.ela-link:hover {
+    text-decoration: none;
+}
