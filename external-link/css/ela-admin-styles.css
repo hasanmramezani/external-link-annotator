@@ -1,0 +1,25 @@
+/* Style for the checkbox section */
+.ela-checkbox {
+    padding: 10px;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 10px;
+}
+
+.ela-checkbox label {
+    font-weight: 600;
+    color: #23282d;
+}
+
+.ela-checkbox input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Optional: Add an icon or indicator */
+.ela-checkbox::before {
+    content: "\f103"; /* Dashicon for link */
+    font-family: dashicons;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    color: #0073aa;
+}
